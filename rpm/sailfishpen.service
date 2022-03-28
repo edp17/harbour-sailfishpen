@@ -1,0 +1,9 @@
+[Unit]
+Description=SailfishPen listener
+
+[Service]
+ExecStart=/usr/bin/droid/sailfishpen-start-service.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
