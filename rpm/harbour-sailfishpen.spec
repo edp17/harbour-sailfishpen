@@ -3,7 +3,7 @@ Version:        1.0.0
 Release:        1
 Summary:        SailfishPen is Samsung's Spen support for Galaxy Note 4.
 License:        GPLv3
-URL:            https://github.com/edp17/sailfishpen
+URL:            https://github.com/edp17/harbour-sailfishpen
 Source0:        %{name}-%{version}.tar.gz
 Source1:        harbour-spen-menu
 Source2:        evtest
