@@ -5,9 +5,6 @@ Summary:        SailfishPen is Samsung's Spen support for Galaxy Note 4.
 License:        GPLv3
 URL:            https://github.com/edp17/harbour-sailfishpen
 Source0:        %{name}-%{version}.tar.bz2
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5Qml)
-BuildRequires:  pkgconfig(Qt5Quick)
 
 %description
 SailfisPen is inspired by Samsung's S-Pen and is created for Sailfish Os.
@@ -27,7 +24,7 @@ install -D -m644 config/harbour-spen-menu.qml %{buildroot}/usr/share/harbour-spe
 install -D -m644 config/CoverPage.qml %{buildroot}/usr/share/harbour-spen-menu/qml/cover/CoverPage.qml
 install -D -m644 config/Main.qml %{buildroot}/usr/share/harbour-spen-menu/qml/pages/Main.qml
 install -D -m644 config/About.qml %{buildroot}/usr/share/harbour-spen-menu/qml/pages/About.qml
-install -D -m644 config/sailfishpen.service %{buildroot}/%{_unitdir}/sailfishpen.service
+install -D -m644 config/sailfishpen.service %{buildroot}//usr/lib/systemd/system/sailfishpen.service
 install -D -m775 config/sailfishpen-daemon.sh %{buildroot}/usr/bin/droid/sailfishpen-daemon.sh
 install -D -m775 config/sailfishpen-start-service.sh %{buildroot}/usr/bin/droid/sailfishpen-start-service.sh
 install -D -m644 config/harbour-sailfishpen.png %{buildroot}/usr/share/icons/hicolor/86x86/apps/harbour-sailfishpen.png
@@ -41,7 +38,7 @@ systemctl-user daemon-reload
 systemctl enable sailfishpen
 
 %files
-%defattr(644,root,root,-)
+%defattr(-,root,root,-)
 %{_bindir}/harbour-spen-menu
 %{_bindir}/evtest
 %{_bindir}/droid/sailfishpen-daemon.sh
