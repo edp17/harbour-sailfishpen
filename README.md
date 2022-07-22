@@ -1,6 +1,6 @@
 # harbour-sailfishpen Sailfish OS packaging
 
-##!This only works on Galaxy Note 4!
+!This only works on Galaxy Note 4!
 
 ## User Usage
 
