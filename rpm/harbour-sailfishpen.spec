@@ -46,7 +46,7 @@ systemctl enable sailfishpen
 %{_bindir}/evtest
 %{_bindir}/droid/sailfishpen-daemon.sh
 %{_bindir}/droid/sailfishpen-start-service.sh
-/usr/lib/systemd/system/sailfishpen.service
+%{_libdir}/systemd/system/sailfishpen.service
 %{_datadir}/harbour-spen-menu/qml/harbour-spen-menu.qml
 %{_datadir}/harbour-spen-menu/qml/cover/CoverPage.qml
 %{_datadir}/harbour-spen-menu/qml/pages/Main.qml
